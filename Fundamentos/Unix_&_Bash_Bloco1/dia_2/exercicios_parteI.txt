@@ -1,0 +1,20 @@
+   29  cat > skills2.txt
+   30  cat >> skills2.txt 
+   31  wc -l skills2.txt 
+   32  head -3 skills2.txt | sort | cat > top_skills.txt
+   33  cat top_skills.txt 
+   34  cat > phrases2.txt
+   35  grep br phrases2.txt | wc -l
+   36  grep -v br phrases2.txt | wc -l
+   37  cat >> phrases2.txt
+   38  cat phrases2.txt countries.txt > bunch_of_things.txt
+   39  sort < bunch_of_things.txt 
+   40  clear
+   41  history | cat > exercicios_parteI.txt
+   42  cat exercicios_parteI.txt 
+   43  tail -29 history | cat > exercicios_parteI.txt 
+   44  history | tail -29 | cat > exercicios_parteI.txt 
+   45  cat exercicios_parteI.txt 
+   46  history | tail -16 | cat > exercicios_parteI.txt 
+   47  cat exercicios_parteI.txt 
+   48  history | tail -20 | cat > exercicios_parteI.txt 
