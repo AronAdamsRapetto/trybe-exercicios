@@ -1,6 +1,6 @@
 # Trybe
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Aron Adams Rapetto](linkedin.com/in/aron-adams-rapetto) 
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Aron Adams](linkedin.com/in/aron-adams-rapetto)_ 
 enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
 "A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, 
