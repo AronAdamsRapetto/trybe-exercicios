@@ -1,0 +1,12 @@
+body{
+    background-color: darkgrey;
+}
+
+article{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    background-color: white;
+    padding: 15px;
+}
