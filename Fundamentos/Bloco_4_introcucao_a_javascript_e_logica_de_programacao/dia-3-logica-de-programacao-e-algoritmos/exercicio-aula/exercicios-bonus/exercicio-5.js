@@ -22,9 +22,9 @@ if(n % 2 != 0){
                 else{
                     geoPiramide = geoPiramide + " ";
                 }
-            }
+            }            
         }
-        console.log(geoPiramide);    
+        console.log(geoPiramide);            
     }
 }
 else{
