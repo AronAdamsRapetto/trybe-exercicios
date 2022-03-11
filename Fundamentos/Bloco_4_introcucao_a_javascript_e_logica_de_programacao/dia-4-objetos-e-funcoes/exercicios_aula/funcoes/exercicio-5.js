@@ -17,7 +17,3 @@ function maisSeRepete(numeros){
 };
 
 console.log(maisSeRepete([2, 3, 2, 5, 8, 2, 3]));
-
-// for(let index = 0; index < numeros.lenght; index += 1){
-//     let cont = 0;
-//     for(let index2 = 0; index2 < numeros.lenght; index2 += 1){
