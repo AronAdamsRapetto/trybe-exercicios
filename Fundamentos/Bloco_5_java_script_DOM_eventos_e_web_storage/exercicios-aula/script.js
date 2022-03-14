@@ -1,20 +1,34 @@
-function mudaTexto(){
+function mudaTexto() {
     document.getElementsByTagName('p')[0].innerText = "Me vejo trabalhando em uma grande empresa de tecnologia, sendo promovido de 'junior' para 'pleno'.";
 };
 
-function mudaCorMainBox(){
+function mudaCorMainBox() {
     let corDeFundoMain = document.getElementsByClassName('main-content');
     corDeFundoMain[0].style.backgroundColor = 'rgb(76,164,109)';
 };
 
-function mudaCorContentBox(){
+function mudaCorContentBox() {
     let corDeFundoContent = document.getElementsByClassName('center-content');
     corDeFundoContent[0].style.backgroundColor = 'white';
 };
 
-function correcaoH1(){
+function correcaoH1() {
     document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
 };
+
+function textoHighCase() {
+    let textos = document.getElementsByTagName('p');
+    for(i = 0; i < textos.length; i += 1) {
+        textos[i].style.textTransform = 'uppercase';
+    }
+}
+
+function imprimeConsole() {
+    textos = document.getElementsByTagName('p');
+    for(i = 0; i < textos.length; i += 1) {
+        console.log(textos[i].innerText);
+    }    
+}
 
 
 /*
@@ -38,3 +52,7 @@ mudaCorMainBox();
 mudaCorContentBox();
 
 correcaoH1();
+
+textoHighCase();
+
+imprimeConsole();
