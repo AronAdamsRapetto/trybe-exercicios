@@ -4,13 +4,17 @@ function mudaTexto(){
 
 function mudaCorMainBox(){
     let corDeFundoMain = document.getElementsByClassName('main-content');
-    corDeFundoMain[0].style.backgroundColor = 'rgb(76,164,109)' 
+    corDeFundoMain[0].style.backgroundColor = 'rgb(76,164,109)';
 };
 
 function mudaCorContentBox(){
     let corDeFundoContent = document.getElementsByClassName('center-content');
     corDeFundoContent[0].style.backgroundColor = 'white';
-}
+};
+
+function correcaoH1(){
+    document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
+};
 
 
 /*
@@ -32,3 +36,5 @@ mudaTexto();
 mudaCorMainBox();
 
 mudaCorContentBox();
+
+correcaoH1();
