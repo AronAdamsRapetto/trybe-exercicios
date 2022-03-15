@@ -11,13 +11,13 @@
 
 // // ex 2
 
-let alteraCor = document.getElementById('elementoOndeVoceEsta').parentNode;
+// let alteraCor = document.getElementById('elementoOndeVoceEsta').parentNode;
 
-alteraCor.style.Color = "red";
+// alteraCor.style.Color = "red";
 
-// // ex 3
+// // // ex 3
 
-document.getElementById('primeiroFilhoDoFilho').innerText = "texto / texto / texto / texto";
+// document.getElementById('primeiroFilhoDoFilho').innerText = "texto / texto / texto / texto";
 
 // // ex 4
 
@@ -41,20 +41,32 @@ document.getElementById('primeiroFilhoDoFilho').innerText = "texto / texto / tex
 
 // PARTE II CRIANDO ELEMENTOS
 
-function criaElementos(pai, elemento){
-    let elementoPai = document.getElementById(pai);
-    let elementoCriado = document.createElement(elemento);
+// function criaElementos(pai, elemento){
+//     let elementoPai = document.getElementById(pai);
+//     let elementoCriado = document.createElement(elemento);
 
-    elementoCriado.innerText = elemento + ' criado, filho de "' + pai + '".';
-    elementoPai.appendChild(elementoCriado);    
-}
+//     elementoCriado.innerText = elemento + ' criado, filho de "' + pai + '".';
+//     elementoPai.appendChild(elementoCriado);    
+// }
 
-criaElementos('pai', 'div');
+// criaElementos('pai', 'div');
 
-criaElementos('elementoOndeVoceEsta', 'h1');
+// criaElementos('elementoOndeVoceEsta', 'h1');
 
-criaElementos('primeiroFilhoDoFilho', 'p');
+// criaElementos('primeiroFilhoDoFilho', 'p');
 
-let encontraTerceiroFilho = document.getElementsByTagName('p')[0].parentElement.parentElement.nextElementSibling;
+// let encontraTerceiroFilho = document.getElementsByTagName('p')[0].parentElement.parentElement.nextElementSibling;
 
-console.log(encontraTerceiroFilho);
+// console.log(encontraTerceiroFilho);
+
+// PARTE III REMOVENDO ELEMENTOS
+
+document.getElementById('elementoOndeVoceEsta').lastElementChild.remove();
+
+document.getElementById('pai').firstElementChild.remove();
+
+document.getElementById('elementoOndeVoceEsta').nextElementSibling.remove();
+
+document.getElementById('pai').removeChild(document.getElementById('quartoEUltimoFilho'));
+
+document.getElementById('elementoOndeVoceEsta').nextSibling.remove();
