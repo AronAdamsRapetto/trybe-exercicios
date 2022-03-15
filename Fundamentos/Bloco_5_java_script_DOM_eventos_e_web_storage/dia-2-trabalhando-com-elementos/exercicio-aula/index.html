@@ -57,22 +57,62 @@
   </head>
   <body>
     <script>
+        // ex 1
       let body = document.getElementsByTagName('body')[0];
       let h1 = document.createElement('h1');
       h1.innerText = 'Exercício 5.2 - JavaScript DOM';
       body.appendChild(h1);
 
+        //ex2
       let main = document.createElement('main');
       main.classList = 'main-content';
       body.appendChild(main);
 
+        //ex3
       let centerContent = document.createElement('section');
       centerContent.classList = 'main-content';
       main.appendChild(centerContent);
 
+        //ex4
       let contentSectionCenter = document.createElement('p');
       contentSectionCenter.innerText = 'Texto do texto solicitado do requisito do exercicio.';
       centerContent.appendChild(contentSectionCenter);
+
+        //ex5
+      let leftContent = document.createElement('section');
+      leftContent.classList = 'left-content';
+      main.appendChild(leftContent);
+
+        //ex6
+      let rightContent = document.createElement('section');
+      rightContent.classList = 'right-content';
+      main.appendChild(rightContent);
+
+        //ex7
+      let img = document.createElement('img');
+      img.src = "https://picsum.photos/200";
+      img.classList = 'small-image';
+      leftContent.appendChild(img);
+
+        //ex 8
+      let ULista = document.createElement('ul');
+      rightContent.appendChild(ULista);
+
+      let itensULista = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];  
+          
+      for(let index = 0; index < itensULista.length; index += 1){
+          let item = document.createElement('li');
+          item.innerText = itensULista[index];
+          rightContent.appendChild(item);
+      }
+
+        //ex9   
+      let h3 = [];
+
+      for(let i = 1; i <= 3; i += 1){
+        h3[i] = document.createElement('h3');
+        main.appendChild(h3[i]);
+      }
       
     </script>
   </body>
