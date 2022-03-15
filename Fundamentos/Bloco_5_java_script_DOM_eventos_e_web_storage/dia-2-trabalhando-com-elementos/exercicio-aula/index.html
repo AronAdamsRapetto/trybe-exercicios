@@ -103,16 +103,35 @@
       for(let index = 0; index < itensULista.length; index += 1){
           let item = document.createElement('li');
           item.innerText = itensULista[index];
-          rightContent.appendChild(item);
+          ULista.appendChild(item);
       }
 
         //ex9   
       let h3 = [];
 
-      for(let i = 1; i <= 3; i += 1){
-        h3[i] = document.createElement('h3');
-        main.appendChild(h3[i]);
+      for(let index = 0; index < 3; index += 1){
+        h3[index] = document.createElement('h3');
+        main.appendChild(h3[index]);
+        //ex 11
+        h3[index].classList = 'description';
       }
+      
+      //ex10
+      h1.classList = 'title';
+
+      //ex12
+      main.removeChild(leftContent);
+
+      //ex13
+      rightContent.style.marginRight = 'auto';
+
+      //ex14
+      centerContent.style.backgroundColor = 'green';
+
+      //ex15
+      itemLista = document.getElementsByTagName('li');
+      itemLista[9].remove();
+      itemLista[8].remove();
       
     </script>
   </body>
