@@ -20,10 +20,12 @@ M: 1000,
 
 for(let index = 0; index < algarismoFornecido.length; index += 1){
     auxAlgarismo = '';
+    if(index < algarismoFornecido.length - 1) {
+        auxAlgarismo += algarismoFornecido[index + 1];
+    } else {
+        auxAlgarismo += algarismoFornecido[index];
+    }
     for(let letra in algarismosRomanos){
-        if(index < algarismoFornecido.length - 1) {
-            auxAlgarismo += algarismoFornecido[index + 1];
-        }
         if (algarismoFornecido[index] === letra) {
             auxSoma = algarismosRomanos.letra;
             if (algarismosRomanos.letra < algarismosRomanos.auxAlgarismo) {
@@ -34,8 +36,6 @@ for(let index = 0; index < algarismoFornecido.length; index += 1){
         }
     }
      
-}        
-    
+}
 
 console.log(valorSoma);
-
