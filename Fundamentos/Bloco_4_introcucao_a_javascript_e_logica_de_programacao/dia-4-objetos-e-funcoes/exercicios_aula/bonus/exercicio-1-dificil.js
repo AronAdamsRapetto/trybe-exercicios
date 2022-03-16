@@ -25,18 +25,17 @@ for(let index = 0; index < algarismoFornecido.length; index += 1){
     } else {
         auxAlgarismo += algarismoFornecido[index];
     }
-    for(let letra in algarismosRomanos){        
+    for(let letra in algarismosRomanos){
         if (algarismoFornecido[index] === letra) {
             auxSoma = algarismosRomanos.letra;
             if (algarismosRomanos.letra < algarismosRomanos.auxAlgarismo) {
                 valorSoma -= auxSoma;
             } else {
                 valorSoma += auxSoma;
-            }            
+            }
         }
-        console.log(valorSoma);
-    }   
-}   
+    }
+     
+}
 
 console.log(valorSoma);
-
