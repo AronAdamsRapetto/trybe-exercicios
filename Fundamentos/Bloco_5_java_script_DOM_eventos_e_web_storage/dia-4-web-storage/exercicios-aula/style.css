@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#box-paragrafo{
+    width: 700px;
+    margin-left: 280px;
+    margin-top: 30px;       
+    padding: 10px;
+    text-align: center;        
+}
+
+section{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#box-alteracoes{
+    width: 180px;    
+    padding: 5px;          
+}
+
+.efeitoCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    
+}
+
+input, select, button {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-style: inset;
+    max-width: 180px;
+    border-radius: 5px;    
+}
+
