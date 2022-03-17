@@ -43,7 +43,7 @@ function createDaysOfTheWeek() {
     }
   }
 
-  // ex2-4
+  // ex 2 e 4
 
   function criaBotao(textoBotao, elementoId) {
     let paiDoBotao = document.getElementsByClassName('buttons-container');
@@ -54,7 +54,7 @@ function createDaysOfTheWeek() {
     paiDoBotao[0].appendChild(botao);
   }
 
-  // ex3
+  // ex 3
 
   function destacaFeriados(){
     let diaFeriado = document.getElementsByClassName('holiday');
@@ -81,16 +81,59 @@ function createDaysOfTheWeek() {
       }
     }
   }
+
+  //ex 6
+
+  function destacaDia(event){
+    event.target.style.fontSize = '2em';
+  }
   
+  function normalizaDia(event){
+    event.target.style.fontSize = '20px';
+  }
+
+  //ex 7
+
+  function addTask(task){
+    let paiDeSpan = document.getElementsByClassName('my-tasks');
+    let criaSpan = document.createElement('span');
+    criaSpan.innerText = task;
+    paiDeSpan[0].appendChild(criaSpan);
+  }
   
+  // chamada das funcoes
+
+  // ex 1
+
   criaLiDia();
   addClasseFeriados();
   addClasseSexta();
   
-  criaBotao('Feriados', 'btn-holiday');  
+  //ex 2
+
+  criaBotao('Feriados', 'btn-holiday'); 
+  
+  //ex 3
+  
   let botaoFeriado = document.getElementById('btn-holiday');
   botaoFeriado.addEventListener('click', destacaFeriados);
 
+  //ex 4
+
   criaBotao('Sexta-feira', 'btn-friday');
+
+  // ex 5
+
   let botaoSexta = document.getElementById('btn-friday');
   botaoSexta.addEventListener('click', alteraSexta);  
+
+  //ex 6
+
+  let dias = document.getElementsByClassName('day');
+  for(let index = 0; index < dias.length; index += 1){
+    dias[index].addEventListener('mouseover', destacaDia);
+    dias[index].addEventListener('mouseleave', normalizaDia);
+  }
+
+  addTask('Terminar exercícios da trybe');
+
