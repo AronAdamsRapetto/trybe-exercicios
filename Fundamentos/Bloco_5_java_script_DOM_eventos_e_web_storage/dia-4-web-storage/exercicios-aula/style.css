@@ -4,29 +4,39 @@
 }
 
 body{
-    background-color: gainsboro;
+    background-color: #333;
+    color: white;
+    font-family: Montserrat, sans-serif;
 }
 
-#cabecalho {
+#cabecalho, h2 {
     text-align: center;
     padding: 10px;    
 }
+
 
 #box-paragrafo{
     width: 900px;
     margin-left: 270px;
     margin-top: 250px;       
     padding: 10px;
-    text-align: justify;        
+    text-align: justify;
+    background-color: #41197f;       
+}
+
+#box-paragrafo p{
+    transition: all 0.25s ease;       
 }
 
 #box-alteracoes{
     width: 200px;    
     padding: 5px;
-    background-color: aqua;
+    background-color: #2fc18c;
     float: left;
     margin-left: 20px;
-    margin-top: 20px;        
+    margin-top: 20px;
+    border-radius: 10px;
+            
 }
 
 input, select, button, textarea {
@@ -54,7 +64,10 @@ textarea{
 #box-addParagrafo{
     float: right;
     margin-right: 280px;
-    max-width: 730px;    
+    max-width: 730px;
+    background-color: #006dfb; 
+    padding: 5px;
+    border-radius: 5px;  
 }
 
 #btn-Addparagrafo, #btn-Delparagrafo{
@@ -63,6 +76,7 @@ textarea{
 
 .selected {
     transform: translateX(+20px);
+    background-color: #41197f;
 }
 
 .efeitoCard {

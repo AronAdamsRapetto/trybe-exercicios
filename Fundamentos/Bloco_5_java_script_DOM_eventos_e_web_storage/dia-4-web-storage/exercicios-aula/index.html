@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leitor de conteúdo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,13 +15,13 @@
         <h1 id="titulo">Leitor de Conteúdo</h1>
     </header>
     <section>
-    <div id="box-addParagrafo">
-        <textarea>Adicione o parágrafo aqui</textarea>        
+    <div id="box-addParagrafo" class="efeitoCard">
+        <textarea id="paragrafo" placeholder="Adicione o parágrafo aqui"></textarea>        
         <button id="btn-Addparagrafo">Adicionar</button>
         <button id="btn-Delparagrafo">Apagar paragrafo</button>
         <button id="btn-DelAllParafrafo">Apagar todos paragrafos</button>
     </div>
-    <div id="box-alteracoes">
+    <div id="box-alteracoes" class="efeitoCard">
         <input id="input-corFundo" type="text" placeholder="Escreva a cor do fundo">
         <button id="btn-corFundo">Altera cor de fundo</button>
 
@@ -43,40 +44,8 @@
     </div> 
 </section>
     <section>
-        <article id = "box-paragrafo">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac nulla eu leo faucibus iaculis sed sit amet
-                dolor. Mauris vel consectetur lorem. Etiam tincidunt ultrices nisl. Fusce faucibus libero ut enim
-                tincidunt, sed ultricies leo sodales. Ut non vestibulum dui. Orci varius natoque penatibus et magnis dis
-                parturient montes, nascetur ridiculus mus. Integer nec tincidunt augue. Quisque tristique ante quis odio
-                accumsan pellentesque non id odio. Sed vitae iaculis ex. Nam turpis elit, semper non efficitur nec,
-                sodales eu ligula.
-
-                Donec in aliquet ipsum, id tincidunt risus. Ut viverra tempor mollis. Fusce nec aliquam nisi. Aliquam
-                nunc nunc, sollicitudin eget accumsan in, mattis sed metus. Aenean laoreet bibendum enim, et volutpat mi
-                iaculis maximus. Curabitur eu odio magna. Maecenas nunc quam, rhoncus viverra convallis et, sagittis et
-                odio.
-
-                Fusce non tempor massa. Pellentesque convallis risus nulla, at luctus nibh tempor quis. Morbi id luctus
-                ex. Duis condimentum libero a purus mattis, ac porta mauris fringilla. Donec ac euismod diam, nec
-                blandit neque. Sed vehicula lectus sed dolor accumsan, non elementum mi porta. Cras porttitor diam eu
-                tincidunt egestas. Etiam et congue metus, non volutpat odio. Phasellus iaculis tempor massa eu interdum.
-
-                Sed vitae luctus augue. Sed euismod est nulla, eu vulputate nisi feugiat in. Nullam auctor ligula a
-                dolor porta, in placerat lacus sollicitudin. Pellentesque cursus nisl in iaculis gravida. Ut augue quam,
-                eleifend vitae blandit eu, gravida eu arcu. Mauris malesuada ullamcorper vestibulum. In suscipit
-                facilisis felis vehicula blandit. Quisque semper augue sed sagittis dapibus. In rhoncus mauris id
-                condimentum ultrices. Quisque non metus vel sapien auctor euismod. Ut imperdiet neque nec mauris
-                convallis accumsan in vitae mauris. Aliquam non suscipit purus. Nunc gravida massa et sapien suscipit,
-                eu ultricies erat sollicitudin. Etiam sed dui suscipit, lobortis dolor scelerisque, venenatis massa.
-
-                Duis ac felis tellus. Integer sed egestas ante, nec vestibulum est. Cras fermentum, sem tincidunt
-                iaculis efficitur, sapien felis pellentesque libero, sit amet euismod lacus tortor ac leo. Donec vel dui
-                felis. Pellentesque dui urna, ultricies at nunc id, egestas aliquet ipsum. Nam tempus vel enim ac
-                accumsan. Integer ultricies massa eget ex lobortis, nec accumsan risus laoreet. Suspendisse euismod
-                turpis eget leo iaculis dapibus. Phasellus purus sem, posuere a nisi vel, egestas gravida ante. Morbi
-                vulputate nisl id pellentesque pretium. Donec tincidunt non purus vitae lacinia. Vivamus sit amet
-                hendrerit lorem. Etiam sollicitudin blandit hendrerit. In felis nisl, laoreet sit amet nisl ut, feugiat
-                sagittis magna.</p>
+        <article id = "box-paragrafo" class="efeitoCard">
+            <h2>Textos serão exibidos aqui</h2>            
         </article>
     </section>    
     <script src="script.js"></script>
