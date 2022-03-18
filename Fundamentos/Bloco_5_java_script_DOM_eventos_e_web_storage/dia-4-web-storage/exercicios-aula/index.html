@@ -14,8 +14,37 @@
         <h1 id="titulo">Leitor de Conteúdo</h1>
     </header>
     <section>
+    <div id="box-addParagrafo">
+        <textarea>Adicione o parágrafo aqui</textarea>        
+        <button id="btn-Addparagrafo">Adicionar</button>
+        <button id="btn-Delparagrafo">Apagar paragrafo</button>
+        <button id="btn-DelAllParafrafo">Apagar todos paragrafos</button>
+    </div>
+    <div id="box-alteracoes">
+        <input id="input-corFundo" type="text" placeholder="Escreva a cor do fundo">
+        <button id="btn-corFundo">Altera cor de fundo</button>
+
+        <input id="input-corTexto" type="text" placeholder="Escreva a cor do texo">
+        <button id="btn-corTexto">Altera cor do texto</button>
+
+        <input id="input-tamanhoFonte" type="text" placeholder="Digite o tamanho da fonte">
+        <button id="btn-tamanhoFonte">Altera tamanho da fonte</button>
+
+        <input id="input-espacoLinhas" type="text" placeholder="Digite um número">
+        <button id="btn-espacoLinhas">Altera espaço entre as linhas</button>
+
+        <select id="input-Fonte" type="text" placeholder="Selecione a fonte que deseja">
+            <option value="'Courier New', Courier, monospace">'Courier New', Courier, monospace</option>
+            <option value="'Times New Roman', Times, serif">'Times New Roman', Times, serif</option>
+            <option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+            <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif</option>
+        </select>
+        <button id="btn-Fonte">Altera a fonte</button>
+    </div> 
+</section>
+    <section>
         <article id = "box-paragrafo">
-            <p id = "paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac nulla eu leo faucibus iaculis sed sit amet
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac nulla eu leo faucibus iaculis sed sit amet
                 dolor. Mauris vel consectetur lorem. Etiam tincidunt ultrices nisl. Fusce faucibus libero ut enim
                 tincidunt, sed ultricies leo sodales. Ut non vestibulum dui. Orci varius natoque penatibus et magnis dis
                 parturient montes, nascetur ridiculus mus. Integer nec tincidunt augue. Quisque tristique ante quis odio
@@ -49,30 +78,7 @@
                 hendrerit lorem. Etiam sollicitudin blandit hendrerit. In felis nisl, laoreet sit amet nisl ut, feugiat
                 sagittis magna.</p>
         </article>
-    </section>
-    <section>
-        <div id="box-alteracoes">
-            <input id="input-corFundo" type="text" placeholder="Escreva a cor do fundo">
-            <button id="btn-corFundo">Altera cor de fundo</button>
-
-            <input id="input-corTexto" type="text" placeholder="Escreva a cor do texo">
-            <button id="btn-corTexto">Altera cor do texto</button>
-
-            <input id="input-tamanhoFonte" type="text" placeholder="Digite o tamanho da fonte">
-            <button id="btn-tamanhoFonte">Altera tamanho da fonte</button>
-
-            <input id="input-espacoLinhas" type="text" placeholder="Digite um número">
-            <button id="btn-espacoLinhas">Altera espaço entre as linhas</button>
-
-            <select id="input-Fonte" type="text" placeholder="Selecione a fonte que deseja">
-                <option value="'Courier New', Courier, monospace">'Courier New', Courier, monospace</option>
-                <option value="'Times New Roman', Times, serif">'Times New Roman', Times, serif</option>
-                <option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
-                <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif</option>
-            </select>
-            <button id="btn-Fonte">Altera a fonte</button>
-        </div> 
-    </section>
+    </section>    
     <script src="script.js"></script>
 </body>
 </html>

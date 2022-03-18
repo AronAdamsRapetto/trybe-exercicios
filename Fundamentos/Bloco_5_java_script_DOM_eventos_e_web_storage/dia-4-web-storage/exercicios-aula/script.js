@@ -12,39 +12,43 @@ let alteracoes = {
     fonte: ''
 };
 
+function armazenaValor (objeto){
+    localStorage.setItem('alteracoes', JSON.stringify(objeto));
+}
+
 function addCorFundo (){
     let corPedida = document.getElementById('input-corFundo');
     boxParagrafo.style.backgroundColor = corPedida.value;
-    alteracoes.corFundo = corPedida.value;
-    localStorage.setItem('alteracoes', JSON.stringify(alteracoes));
+    alteracoes.corFundo = corPedida.value;    
+    armazenaValor(alteracoes);
 }
 
 function alteraCorTexto(){
     let corPedida = document.getElementById('input-corTexto');
     boxParagrafo.style.color = corPedida.value;
     alteracoes.corTexto = corPedida.value;
-    localStorage.setItem('alteracoes', JSON.stringify(alteracoes));
+    armazenaValor(alteracoes);
 }
 
 function alteraTamanhoFonte(){
     let tamanho = document.getElementById('input-tamanhoFonte');
     boxParagrafo.style.fontSize = tamanho.value + 'px';
     alteracoes.tamanhoFonte = tamanho.value;
-    localStorage.setItem('alteracoes', JSON.stringify(alteracoes));    
+    armazenaValor(alteracoes);    
 }
 
 function alteraEspacLinhas(){
     let espaco = document.getElementById('input-espacoLinhas');
     boxParagrafo.style.lineHeight = espaco.value + 'px';
     alteracoes.espacoLinhas = espaco.value;
-    localStorage.setItem('alteracoes', JSON.stringify(alteracoes));
+    armazenaValor(alteracoes);
 }
 
 function alteraFonte(){
     let fonte = document.getElementById('input-Fonte');
     boxParagrafo.style.fontFamily = fonte.value;
     alteracoes.fonte = fonte.value;
-    localStorage.setItem('alteracoes', JSON.stringify(alteracoes));
+    armazenaValor(alteracoes);
 }
 
 botaoMudaCorDeFundo.addEventListener('click', addCorFundo);

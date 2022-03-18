@@ -3,38 +3,68 @@
     padding: 0;
 }
 
-h1 {
+body{
+    background-color: gainsboro;
+}
+
+#cabecalho {
     text-align: center;
+    padding: 10px;    
 }
 
 #box-paragrafo{
-    width: 700px;
-    margin-left: 280px;
-    margin-top: 30px;       
+    width: 900px;
+    margin-left: 270px;
+    margin-top: 250px;       
     padding: 10px;
-    text-align: center;        
-}
-
-section{
-    display: inline-block;
-    vertical-align: middle;
+    text-align: justify;        
 }
 
 #box-alteracoes{
-    width: 180px;    
-    padding: 5px;          
+    width: 200px;    
+    padding: 5px;
+    background-color: aqua;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;        
+}
+
+input, select, button, textarea {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-style: inset;    
+    border-radius: 5px;    
+}
+
+input, select, button {
+    max-width: 180px;
+}
+
+textarea{
+    width: 700px;        
+    height: 150px;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 20px;
+    float: right;
+    display: block;
+}
+
+#box-addParagrafo{
+    float: right;
+    margin-right: 280px;
+    max-width: 730px;    
+}
+
+#btn-Addparagrafo, #btn-Delparagrafo{
+    display: inline;
+}
+
+.selected {
+    transform: translateX(+20px);
 }
 
 .efeitoCard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    
 }
-
-input, select, button {
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid #ccc;
-    border-style: inset;
-    max-width: 180px;
-    border-radius: 5px;    
-}
-
