@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #333;
+    color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+#cabecalho, h2 {
+    text-align: center;
+    padding: 10px;    
+}
+
+
+#box-paragrafo{
+    width: 900px;
+    margin-left: 270px;
+    margin-top: 250px;       
+    padding: 10px;
+    text-align: justify;
+    background-color: #41197f;       
+}
+
+#box-paragrafo p{
+    transition: all 0.25s ease;       
+}
+
+#box-alteracoes{
+    width: 200px;    
+    padding: 5px;
+    background-color: #2fc18c;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+            
+}
+
+input, select, button, textarea {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-style: inset;    
+    border-radius: 5px;    
+}
+
+input, select, button {
+    max-width: 180px;
+}
+
+textarea{
+    width: 700px;        
+    height: 150px;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 20px;
+    float: right;
+    display: block;
+}
+
+#box-addParagrafo{
+    float: right;
+    margin-right: 280px;
+    max-width: 730px;
+    background-color: #006dfb; 
+    padding: 5px;
+    border-radius: 5px;  
+}
+
+#btn-Addparagrafo, #btn-Delparagrafo{
+    display: inline;
+}
+
+.selected {
+    transform: translateX(+20px);
+    background-color: #41197f;
+}
+
+.efeitoCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    
+}
