@@ -98,13 +98,11 @@ function atualizaListaParagrafos() {
 }
 
 function delParagrafo() {
-  let paragrafoSelecionado = document.getElementsByClassName("paragrafoAdd");
-  let contIndex = 0;
+  let paragrafoSelecionado = document.getElementsByClassName("paragrafoAdd");  
   paragrafoList = [];
-  for (let index = 0; index < paragrafoSelecionado.length; index += 1) {
-    if (paragrafoSelecionado[index - contIndex].classList.contains("selected")) {
-      paragrafoSelecionado[index - contIndex].remove();
-      contIndex += 1;      
+  for (let index = paragrafoSelecionado.length - 1; index >= 0 ; index -= 1) {
+    if (paragrafoSelecionado[index].classList.contains("selected")) {
+      paragrafoSelecionado[index].remove();            
     }
   }
   atualizaListaParagrafos();  
