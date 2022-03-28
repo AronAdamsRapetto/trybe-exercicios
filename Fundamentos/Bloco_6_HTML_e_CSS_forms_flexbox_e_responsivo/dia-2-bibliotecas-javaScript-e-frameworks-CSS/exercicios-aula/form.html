@@ -19,7 +19,7 @@
     <form id="box-form" action="" method="post">
       <div class="mb-3">
         <label for="input-nome" class="form-label">Nome completo:</label>
-        <input id="input-nome" class="form-control" type="text" name="nome" minlength="10" maxlength="40">
+        <input id="input-nome" required class="form-control" type="text" name="nome" minlength="10" maxlength="40">
       </div>
       <div class="mb-3">
         <label for="input-email" class="form-label">Email:</label>
@@ -52,24 +52,20 @@
       <textarea id="porque" class="form-control" name="porque" maxlength="500" cols="55" rows="10"></textarea>
       </div>
       <div class="mb-3">
-        <label for="data">Qual a melhor data para realizar sua viagem?</label>
+        <label for="data" class="form-label">Qual a melhor data para realizar sua viagem?</label>
         <input id="data" class="form-control" type="date" name="data">
       </div>
-      <div class="mb-3">
-        <label for="promocional">
-          <input id="promocional" type="checkbox" name="promocional" value="ok">
-          Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
-        </label>
+      <div class="form-check mb-3">
+          <input id="promocional" class="form-check-input" type="checkbox" name="promocional" value="ok">
+          <label for="promocional" class="form-check-label">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+      </div>
+      <div class="form-check mb-3">
+          <input id="direito-imagens" class="form-check-input" type="checkbox" required name="direito-imagens" value="ok">
+          <label for="direito-imagens" class="form-check-label">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
       </div>
       <div class="mb-3">
-        <label for="direito-imagens">
-          <input id="direito-imagens" type="checkbox" name="direito-imagens" value="ok">
-          Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-        </label>
-      </div>
-      <div class="mb-3">
-        <button id="btn-enviar" type="submit">Enviar</button>
-        <button id="btn-limpar" type="reset">Apagar</button>
+        <button id="btn-enviar" class="btn btn-success" type="submit">Enviar</button>
+        <button id="btn-limpar" class="btn btn-danger" type="reset">Apagar</button>
       </div>
     </form>
   </section>
