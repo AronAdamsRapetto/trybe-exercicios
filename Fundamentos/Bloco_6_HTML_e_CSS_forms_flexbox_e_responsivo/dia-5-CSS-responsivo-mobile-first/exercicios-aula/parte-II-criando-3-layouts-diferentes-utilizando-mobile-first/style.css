@@ -9,24 +9,25 @@ html {
 }
 
 body {
-  font-size: 25px;
+  font-size: 16px;
 }
 
 .container {
-  margin: 25px;
+  margin: 25px;  
 }
 
-header, nav, nav ul {
-  display: flex;  
+header, nav, nav ul, .aside-article-container, .aside-container, .aside-one, .aside-two, .main-content {
+  display: flex;
+  flex-direction: column;  
 }
 
-header {
-  flex-direction: column;
+header {  
   align-items: center;
   width: 100%;   
 }
 header p {
-  font-size: xx-large;
+  font-size: x-large;
+  margin-bottom: 30px;
 }
 
 header nav {
@@ -34,13 +35,13 @@ header nav {
   justify-content: flex-start;
   background-color: black;
   border-radius: 25px; 
-  color: white;
-  align-self: flex-end;     
+  color: white; 
 }
 
 nav ul {
   margin: 10px 0;
   padding-left: 20px;
+  flex-direction: row;
 }
 
 header nav ul li {  
@@ -51,5 +52,35 @@ header nav ul li {
 }
 
 article h1 {
-  font-size: 40px
+  font-size: 27px;
 }
+
+footer {
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .aside-container {
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {  
+  .aside-article-container {
+    flex-direction: row;    
+  }
+  
+  .aside-container {
+    flex-direction: column;
+    max-width: 30%;
+    align-self: flex-start;            
+  } 
+
+  .main-content{
+    flex-basis: 70%;
+    padding: 15px; 
+  }
+}
+
