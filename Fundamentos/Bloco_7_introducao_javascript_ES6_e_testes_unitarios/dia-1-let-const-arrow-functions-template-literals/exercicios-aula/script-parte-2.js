@@ -11,16 +11,32 @@
 
 // console.log(fatorial(4));
 
-const encontraMaiorPalavra = (palavras) => {
-  let maiorPalavra = "";
-  for (let index = 0; index < palavras.length; index += 1) {
-    if (palavras[index].length > maiorPalavra.length){
-      maiorPalavra = palavras[index];
-    }
-  }
-  return maiorPalavra;
-}
+//Exercicio 2
 
-const longestWord = (frase) => encontraMaiorPalavra(frase.split(" "));  
+// const encontraMaiorPalavra = (palavras) => {
+//   let maiorPalavra = "";
+//   for (let index = 0; index < palavras.length; index += 1) {
+//     if (palavras[index].length > maiorPalavra.length){
+//       maiorPalavra = palavras[index];
+//     }
+//   }
+//   return maiorPalavra;
+// }
 
-console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
+// const longestWord = (frase) => encontraMaiorPalavra(frase.split(" "));  
+
+// console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
+
+//Exercicio 4
+
+const principaisSkills = ['JavaScript', 'HTML', 'CSS', 'DOM', 'Git'];
+let frase = `Tryber x aqui!`;
+
+const substituiX = (texto) => frase = frase.replace('x', texto); 
+
+const ordenaSkills = () => principaisSkills.sort();
+
+const juntaMensagem = () => `${substituiX('Aron')} Minhas cinco principais habilidades são:
+${ordenaSkills()}`;
+
+console.log(juntaMensagem());
