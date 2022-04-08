@@ -67,7 +67,7 @@ const books = [
 
 function everyoneWasBornOnSecXX() {
   // escreva seu código aqui
-  return books.every((valor) => valor.author.birthYear > 1901 && valor.author.birthYear < 2000);
+  return books.every((valor) => valor.author.birthYear >= 1901 && valor.author.birthYear <= 2000);
 }
 
 console.log(everyoneWasBornOnSecXX());
