@@ -62,3 +62,17 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
+  const expectedResult = false;
+
+function authorUnique() {
+  let resultado = true;
+  books.forEach((valorFor, index , array) => {
+    let localizaDataIguais = array.some((valor) => valorFor.author.birthYear === valor.author.birthYear && valorFor.author.name !== valor.author.name);
+
+    if (localizaDataIguais === true) {
+      resultado = false;  
+    }    
+  });
+  return resultado;
+};
+console.log(authorUnique());
