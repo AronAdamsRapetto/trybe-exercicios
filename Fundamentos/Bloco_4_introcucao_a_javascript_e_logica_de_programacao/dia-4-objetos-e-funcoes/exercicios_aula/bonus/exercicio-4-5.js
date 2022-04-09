@@ -28,3 +28,12 @@ let moradores = {
       },
     ],
   };
+
+  const moradorBlocoDois = Object.values(moradores.blocoDois[1]);
+  console.log(`O morador do bloco 2 de nome ${moradorBlocoDois[0]} ${moradorBlocoDois[1]} mora no ${moradorBlocoDois[2]}° andar, apartamento ${moradorBlocoDois[3]}.`);
+
+  for (key in moradores) {
+      moradores[key].forEach((element) => {
+          console.log(`${element.nome} ${element.sobrenome}`);
+      });
+  }
