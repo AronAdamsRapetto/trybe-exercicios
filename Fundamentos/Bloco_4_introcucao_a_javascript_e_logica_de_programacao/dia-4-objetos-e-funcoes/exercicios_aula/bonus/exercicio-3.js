@@ -101,6 +101,14 @@ const basket = [
   "Uva",
 ];
 
+const imprimeQuantidade = (objetoDeFrutas) => {
+  let mensagem = 'Sua cesta possui: ';
+  for (key in objetoDeFrutas) {
+    mensagem += `${objetoDeFrutas[key]} ${key}s, `;
+  }
+  return mensagem;
+}
+
 const contaFrutas = (arrayDeFrutas) => {
   const objetoDeFrutas = {};
 
@@ -111,7 +119,7 @@ const contaFrutas = (arrayDeFrutas) => {
       objetoDeFrutas[elemento] += 1;
     }
   });
-	return objetoDeFrutas
+	return imprimeQuantidade(objetoDeFrutas);
 };
 
 console.log(contaFrutas(basket));
