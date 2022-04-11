@@ -62,3 +62,15 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
+  const expectedResult = 'O Senhor dos Anéis';
+
+function authorWith3DotsOnName() {
+  // escreva seu código aqui
+  const nomeDolivro = books.filter((livro) => {
+    return livro.author.name[1] === '.' && livro.author.name[4] === '.' && livro.author.name[7] === '.'
+  });
+  
+  return nomeDolivro[0].name;
+}
+
+console.log(authorWith3DotsOnName());
