@@ -5,4 +5,3 @@ function interrompeEnvio(event) {
 }
 
 botaoEnviar.addEventListener('click', interrompeEnvio);
-
