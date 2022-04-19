@@ -1,0 +1,37 @@
+header {
+  text-align: center;
+}
+
+#rgb-color {
+  font-size: 25px;
+  display: block;
+  text-align: center;
+}
+
+#box-ballCores {
+  text-align: center;
+  margin: 20px;
+}
+
+.ball {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 5px;
+}
+
+#answer , #score {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+#reset-game {
+  padding: 6px 30px;
+}
+
+#box-btn {
+  text-align: center;
+}
