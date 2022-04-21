@@ -1,0 +1,19 @@
+1 - O que é um código que é executado de modo assíncrono? Qual é a diferença disso para um código que é executado de modo síncrono?
+
+O código sincrono vai executar um processo após o outro como em uma fila de espera, enquanto o código assíncrono executa processos concomitantes, sem travar o carregamento da página. No entanto eles não possuem organização, o primeiro a inicar não necessáriamente será o primeiro a finalizar e não aguardará outros para finalizar o processo e carregar o elemento na página.
+
+2 - Quando você tem que enfileirar várias callbacks , que problema surge?
+
+O famigerado Calback Hell, aquela imundiça que não dá para entender nada de tantas callbacks encadeadas, conectadas e bagunçadas, que nem a fiazada de trás do meu setup kkkkk
+
+3 - Por que as Promises são uma forma de resolver esse problema?
+
+As promisses são operações assincronas que sempre vão retornar algo, afinal é uma promessa... retorna o que foi pedido caso a requisição seja um sucesso ou o erro caso a requisição tenha falhado, até o momento não sei como construir uma promisse, pelo o que entendi esse assunto será mais apronfundado no módulo de back-end, mas sei que sempre que for feita uma requisição em uma API, uma promisse será retornada.
+
+4 - Quando você vai se comunicar com uma API , tal comunicação deve ser síncrona ou assíncrona? Lembre-se de que o serviço ao qual você está se conectando pode demorar muito ou pouco para dar retorno, pode estar fora do ar etc.
+
+A comunicação deve ser feita de forma assíncrona para não comprometer o resto da página caso demore ou nada seja retornado.
+
+5 - Dada a resposta anterior, o que é fetch e para que ele serve?
+
+A fetch é um meio de fazer requisições para uma API de forma assíncrona, porém ela por si só não resolve o problema, ainda terá de ser utilizado o .then() e .catch() ou o async/await em conjunto com try/catch para organizar e manipular o retorno da API e tratar possíveis erros.
