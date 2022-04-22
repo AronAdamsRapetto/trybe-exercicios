@@ -1,6 +1,7 @@
 const boxCores = document.getElementById('box-ballCores');
 const btnReset = document.getElementById('reset-game');
 let contadorPontos = 0;
+let contadorClick = 0;
 
 function contadorScore() {
   contadorPontos += 3;
@@ -10,9 +11,12 @@ function contadorScore() {
 function verificaResposta(event) {
   const resposta = document.getElementById('answer');
   const rgbColor = document.getElementById('rgb-color');
-  if (event.target.style.backgroundColor === `rgb${rgbColor.innerText}`) {
+  if (event.target.style.backgroundColor === `rgb${rgbColor.innerText}` && contadorClick < 1) {
     resposta.innerText = 'Acertou!';
+    contadorClick += 1;
     contadorScore();
+  } else if (contadorClick >= 1) {
+    resposta.innerText = 'Acertou!';
   } else {
     resposta.innerText = 'Errou! Tente novamente!';
   }
@@ -45,6 +49,7 @@ function resetGame() {
   const cores = document.getElementsByClassName('ball');
   const corSorteada = Math.floor(Math.random() * 6) + 1;
   const rgbColor = document.getElementById('rgb-color');
+  contadorClick = 0;
   document.getElementById('answer').innerText = 'Escolha uma cor';
   for (let index = 0; index < cores.length; index += 1) {
     if (index === corSorteada) {
