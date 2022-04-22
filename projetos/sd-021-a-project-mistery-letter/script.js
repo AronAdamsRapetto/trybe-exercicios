@@ -108,9 +108,13 @@ function validaCarta() {
   const palavrasCarta = textoInput.value.split(' ');
   const carta = document.getElementById('carta-gerada');
   const valorPalavras = percorreCarta(palavrasCarta);
+  const container = document.getElementById('container-carta');
+  container.style.display = 'block';
   if (valorPalavras > 0) {
+    container.style.color = 'black';
     geraCarta(palavrasCarta);
   } else {
+    container.style.color = 'white';
     carta.innerText = 'Por favor, digite o conteúdo da carta.';
   }
 }
