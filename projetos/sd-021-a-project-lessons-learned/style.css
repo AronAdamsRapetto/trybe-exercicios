@@ -110,6 +110,10 @@ h3 {
   color: #a9c9ff;
 }
 
+.concluido {
+  text-decoration: line-through;
+}
+
 #licoes_titulo {
   text-align: center;
 }
