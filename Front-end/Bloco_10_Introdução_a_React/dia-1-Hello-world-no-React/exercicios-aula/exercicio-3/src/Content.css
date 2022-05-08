@@ -1,0 +1,14 @@
+.key {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conteudo {
+    list-style: none;
+    border: 1px solid black;
+    margin: 8px;
+    padding: 8px;
+    width: 350px;
+    text-align: left;
+}
