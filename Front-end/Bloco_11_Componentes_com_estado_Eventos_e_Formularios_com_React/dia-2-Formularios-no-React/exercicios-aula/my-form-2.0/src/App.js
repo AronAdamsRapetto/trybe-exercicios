@@ -1,11 +1,18 @@
-import './App.css';
+import React from "react";
+import "./App.css";
+import DadosPessoais from "./components/DadosPessoais";
 
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>Meu formulário 2.0</h1>
+        <form>
+          <DadosPessoais />
+        </form>
+      </div>
+    );
+  }
 }
 
 export default App;
