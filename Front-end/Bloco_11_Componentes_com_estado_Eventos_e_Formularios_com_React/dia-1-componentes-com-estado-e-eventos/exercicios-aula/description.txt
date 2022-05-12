@@ -1,0 +1,1 @@
+Exercícios aula realizados no repositório forkado exercise-pokedex-state
