@@ -2,11 +2,11 @@ import React from "react";
 
 class InputEmail extends React.Component {
   render() {
-    const { handleChange, value, handleError } = this.props;
-    let erro = undefined;
-    if (value.length > 40) {
-      erro = true;      
-    }        
+    const { handleChange, value } = this.props;
+    // let erro = undefined;
+    // if (value.length > 40) {
+    //   erro = true;      
+    // }        
     return (
       <div>
         <label>E-mail</label>
