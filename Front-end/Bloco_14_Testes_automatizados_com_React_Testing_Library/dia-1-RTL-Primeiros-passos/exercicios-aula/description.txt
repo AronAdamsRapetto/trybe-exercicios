@@ -1,0 +1,1 @@
+Exercícios do dia realizados no repositório forkado exercise-todo-list // https://github.com/AronAdamsRapetto/exercise-todo-list
