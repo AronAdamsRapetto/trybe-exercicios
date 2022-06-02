@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de conteúdo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <h1 id="titulo">Leitor de Conteúdo</h1>
+    </header>
+    <section>
+    <div id="box-addParagrafo" class="efeitoCard">
+        <textarea id="paragrafo" placeholder="Adicione o parágrafo aqui"></textarea>        
+        <button id="btn-Addparagrafo">Adicionar</button>
+        <button id="btn-Delparagrafo">Apagar paragrafo</button>
+        <button id="btn-DelAllParafrafo">Apagar todos paragrafos</button>
+    </div>
+    <div id="box-alteracoes" class="efeitoCard">
+        <input id="input-corFundo" type="text" placeholder="Escreva a cor do fundo">
+        <button id="btn-corFundo">Altera cor de fundo</button>
+
+        <input id="input-corTexto" type="text" placeholder="Escreva a cor do texo">
+        <button id="btn-corTexto">Altera cor do texto</button>
+
+        <input id="input-tamanhoFonte" type="text" placeholder="Digite o tamanho da fonte">
+        <button id="btn-tamanhoFonte">Altera tamanho da fonte</button>
+
+        <input id="input-espacoLinhas" type="text" placeholder="Digite um número">
+        <button id="btn-espacoLinhas">Altera espaço entre as linhas</button>
+
+        <select id="input-Fonte" type="text" placeholder="Selecione a fonte que deseja">
+            <option value="'Courier New', Courier, monospace">'Courier New', Courier, monospace</option>
+            <option value="'Times New Roman', Times, serif">'Times New Roman', Times, serif</option>
+            <option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+            <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif</option>
+        </select>
+        <button id="btn-Fonte">Altera a fonte</button>
+    </div> 
+</section>
+    <section>
+        <article id = "box-paragrafo" class="efeitoCard">
+            <h2>Textos serão exibidos aqui</h2>            
+        </article>
+    </section>    
+    <script src="script.js"></script>
+</body>
+</html>

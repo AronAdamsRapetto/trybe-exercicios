@@ -1,0 +1,20 @@
+    1  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+    2  cat countries.txt 
+    3  clear
+    4  less countries.txt 
+    5  grep Brazil countries.txt 
+    6  grep -i brazil countries.txt 
+    7  cat > phrases.txt
+    8  ls
+    9  cat phrases.txt 
+   10  clear
+   11  grep -v fox phrases.txt 
+   12  wc -w phrases.txt 
+   13  wc -l phrases.txt 
+   14  touch empty.tbt empty.pdf
+   15  ls
+   16  ls *.txt
+   17  ls *.tbt *.txt
+   18  man ls
+   19  clear
+   20  history | cat > exercicios_parteII.txt

@@ -1,0 +1,8 @@
+    1  ls -l
+    2  chmod 666 bunch_of_things.txt 
+    3  ls -l
+    4  chmod 444 bunch_of_things.txt 
+    5  ls -l
+    6  chmod 644 bunch_of_things.txt 
+    7  ls -l
+    8  history | cat > exercicios_parteII

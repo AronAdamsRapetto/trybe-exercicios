@@ -1,0 +1,18 @@
+    1  sleep 30 &
+    2  ps
+    3  kill 18138
+    4  ps
+    5  sleep 30
+    6  bg
+    7  sleep 300 &
+    8  sleep 200
+    9  sleep 100
+   10  jobs
+   11  fg %3
+   12  jobs
+   13  bg %5
+   14  kill %3 %4 %5
+   15  jobs
+   16  kill %1
+   17  jobs
+   18  history | cat > exercicios_parteIII

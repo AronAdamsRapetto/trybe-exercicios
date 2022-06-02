@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.paleta-cores {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.paleta-cores:nth-last-of-type( 1 ) {
+  background-color: #000;
+}
+.paleta-cores:nth-last-of-type( 2 ) {
+  background-color: #0a254d;
+}
+.paleta-cores:nth-last-of-type( 3 ) {
+  background-color: #3256a3;
+}
+.paleta-cores:nth-last-of-type( 4 ) {
+  background-color: #678dff;
+}
+.paleta-cores:nth-last-of-type( 5 ) {
+  background-color: #a9c9ff;
+}
+
+body {
+  background-color: #3256a3;
+  color: white;
+}
+
+#titulo {
+  color: white;
+  margin-top: 7px;
+  margin-left: 8px;
+}
+
+#cabecalho {
+  background-color: #0a254d;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+}
+
+nav {
+  background-color: #000000;
+  width: 100%;
+  margin-top: 10px;
+  padding: 13px;
+  border-radius: 20px 0 0 20px;
+  margin-left: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  border-left: 2px solid white;
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+#box-fotoArtigo {
+  background-color: #678dff;
+  width: 700px;
+  margin-left: 10px;
+  padding: 30px;
+  display: inline-block;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#minha_foto {
+  width: 200px;
+  border-radius: 20px;
+  margin-top: 100px;
+  display: inline-block;
+}
+
+#artigo-principal {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+  margin-top: 110px;
+  margin-left: 30px;
+}
+
+table,
+tr,
+td {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+#barra-lateral {
+  background-color: #678dff;
+  width: 150px;
+  display: inline-block;
+  margin-left: 190px;
+  padding: 30px;
+  vertical-align: text-bottom;
+  box-shadow: 4px 4px 8px rgba(0 , 0 , 0 , 0.4);
+}
+
+h3 {
+  color: #a9c9ff;
+}
+
+.concluido {
+  text-decoration: line-through;
+}
+
+#licoes_titulo {
+  text-align: center;
+}
+
+#box-licoes {
+  text-align: center;
+  padding: 40px;
+}
+
+.lado-direito,
+.lado-esquerdo {
+  font-size: large;
+  padding: 10px 40px;
+  width: 200px;
+  background: rgba(0 , 0 , 0 , 0.7);
+  border: 10px double black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 30px;
+  display: inline-block;
+  margin: 40px 20px 0 20px;
+}
+
+#rodape {
+  position: relative;
+  background-color: #0a254d;
+  height: 50px;
+}

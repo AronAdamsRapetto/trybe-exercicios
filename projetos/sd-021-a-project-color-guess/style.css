@@ -1,0 +1,60 @@
+body {
+  background-image: url('img/lapis2.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+#container {
+  margin-top: 50px;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  width: 410px;
+  padding: 30px 0 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  margin: auto;
+  border-radius: 8px;
+}
+
+#rgb-color {
+  font-size: 25px;
+  display: block;
+  text-align: center;
+}
+
+#box-ballCores {
+  text-align: center;
+  margin: 20px;
+}
+
+.ball {
+  border: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 5px;
+}
+
+#answer , #score {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+#reset-game {
+  padding: 6px 30px;
+  margin-top: 15px;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+}
+
+#box-btn {
+  text-align: center;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício - Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Exercício - Formulário HTML</h1>
+  </header>
+  <section>
+    <form id="box-form" action="#" method="post">
+      <div class="linha-form">
+        <label for="input-nome">Nome completo:</label>
+        <input id="input-nome" type="text" name="nome" minlength="10" maxlength="40">
+      </div>
+      <div class="linha-form">
+        <label for="input-email">Email:</label>
+        <input id="input-email" type="email" name="email" minlength="10" maxlength="50">
+      </div>
+      <div class="linha-form">
+        <legend>Destino Preferido:</legend>
+        <input id="opcao-1" type="radio" name="destino-preferido" value="cidade">
+        <label for="opcao-1">Cidade</label>
+        <input id="opcao-2" type="radio" name="destino-preferido" value="campo">
+        <label for="opcao-2">Campo</label>
+        <input id="opcao-3" type="radio" name="destino-preferido" value="praia">
+        <label for="opcao-3">Praia</label>
+        <input id="opcao-4" type="radio" name="destino-preferido" value="montanhas">
+        <label for="opcao-4">Montanhas</label>
+      </div>
+      <div class="linha-form">
+      <label for="porque">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+      <br>
+      <textarea id="porque" name="porque" maxlength="500" cols="55" rows="10"></textarea>
+      </div class="linha-form">
+      <div class="linha-form">
+        <label for="data">Qual a melhor data para realizar sua viagem?</label>
+        <input id="data" type="date" name="data">
+      </div>
+      <div class="linha-form">
+        <label for="promocional">
+          <input id="promocional" type="checkbox" name="promocional" value="ok">
+          Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+        </label>
+      </div>
+      <div class="linha-form">
+        <label for="direito-imagens">
+          <input id="direito-imagens" type="checkbox" name="direito-imagens" required value="ok">
+          Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+        </label>
+      </div>
+      <div class="linha-form">
+        <button id="btn-enviar" type="submit">Enviar</button>
+        <button id="btn-limpar" type="reset">Apagar</button>
+      </div>
+    </form>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

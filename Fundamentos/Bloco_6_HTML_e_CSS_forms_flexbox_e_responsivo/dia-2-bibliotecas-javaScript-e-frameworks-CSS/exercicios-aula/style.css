@@ -1,0 +1,44 @@
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+/* header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#box-form {
+    border: 2px solid black;
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+}
+
+#box-form input[type='email'] {
+    margin-left: 65px;
+}
+
+.linha-form {
+    margin: 8px;
+}
+
+#box-form input[type='radio'] {
+    margin: 5px 0 5px 8px;
+}
+
+#btn-enviar, #btn-limpar {
+    padding: 5px 30px;
+    margin: 15px 5px 0;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: white;
+} */
+
+/* ESTILO VIA BOOTSTRAP */
+
+.container {
+    border: 1px solid black;
+    margin: 30px auto;
+    width: 50%;
+}

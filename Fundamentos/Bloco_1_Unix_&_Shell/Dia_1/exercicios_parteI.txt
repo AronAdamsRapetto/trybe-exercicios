@@ -1,0 +1,34 @@
+    1  history
+    2  clear
+    3  mkdir unix_tests
+    4  cd unix_tests/
+    5  touch trybe.txt
+    6  cp trybe.txt trybe_backup.txt
+    7  ls
+    8  mv trybe.txt renome.txt
+    9  ls
+   10  mkdir backup
+   11  mv trybe_backup.txt backup/
+   12  ls
+   13  mkdir backup2
+   14  cd backup
+   15  ls
+   16  mv trybe_backup.txt ../backup2
+   17  cd ../backup2
+   18  ls
+   19  cd ..
+   20  rmdir backup
+   21  ls
+   22  mv backup2/ backup
+   23  pwd
+   24  ls
+   25  rm -rf backup/
+   26  clear
+   27  cat > skills.txt
+   28  head -5 skills.txt 
+   29  tail -4 skills.txt 
+   30  ls
+   31  rm *.txt
+   32  ls
+   33  clear
+   34  history | cat > exercicios.txt
