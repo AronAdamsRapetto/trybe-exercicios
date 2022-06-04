@@ -69,5 +69,23 @@ describe("Testando novas funções do arquivo service.js", () => {
     service.upperCase.mockRestore();
     expect(service.upperCase('nome')).toBe(undefined);
     expect(service.upperCase).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe("Testando mock de requisição a API", () => {
+  const service = require('./service');  
+
+  it("testa requisição resolvida", async () => {
+    service.fetchDogs.mockResolvedValue("request success");
+    
+    await expect(service.fetchDogs()).resolves.toBe("request success");
+    expect(service.fetchDogs).toHaveBeenCalledTimes(1);
+  });
+
+  it("Testa requisição rejeitada", async () => {    
+    service.fetchDogs.mockRejectedValue("request fail");
+
+    await expect(service.fetchDogs()).rejects.toMatch("request fail");
+    expect(service.fetchDogs).toHaveBeenCalledTimes(2);
   })
-})
+});
