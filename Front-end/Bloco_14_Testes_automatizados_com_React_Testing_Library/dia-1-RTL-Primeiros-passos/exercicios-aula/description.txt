@@ -1,2 +1,0 @@
-Exercícios do dia realizados no repositório forkado exercise-todo-list // https://github.com/AronAdamsRapetto/exercise-todo-list
-Exercício Bônus do dia realizado no repositório forkado exercise-tic-tac-toe // https://github.com/AronAdamsRapetto/exercise-tic-tac-toe
