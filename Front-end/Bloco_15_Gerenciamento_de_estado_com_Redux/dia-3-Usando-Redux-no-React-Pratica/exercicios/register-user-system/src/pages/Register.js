@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 class Register extends React.Component {
   state = {
-    isLoged: false,
+    isLoged: true,
     costumer: {
       nome: '',
       idade: '',
@@ -16,12 +16,12 @@ class Register extends React.Component {
     },
   }
 
-  componentDidMount() {
-    const { email, senha } = this.props;
-    if (email !== '' && senha !== '') {
-      this.setState({ isLoged: true });
-    }
-  }
+  // componentDidMount() {
+  //   const { email, senha } = this.props;
+  //   if (email !== '' && senha !== '') {
+  //     this.setState({ isLoged: true });
+  //   }
+  // }
 
   handleChange = ({ target: { name, value } }) => {
     this.setState((prevState) => ({ costumer: { ...prevState.costumer, [name]: value } }));

@@ -3,27 +3,51 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import { DELETE } from '../redux/actions/actionTypes';
+import manageCostumers from '../redux/actions/actionCostumers';
 
 class Costumers extends React.Component {
   state = {
-    isLoged: false,
+    isLoged: true,
+    isSorted: false,
+    sorteredCostumers: [],
   }
 
   componentDidMount() {
-    const { email, senha } = this.props;
+    const { email, senha, costumers } = this.props;
+    const sorteredCostumers = [...costumers];
     if (email !== '' && senha !== '') {
-      this.setState({ isLoged: true });
+      sorteredCostumers.sort((a, b) => {
+        if (a.nome < b.nome) return -1;
+        if (a.nome > b.nome) return 1;
+        return 0;
+      });
+      
+      this.setState({ isLoged: true, sorteredCostumers });
     }
+  }
+
+  handleOrder = () => {
+    this.setState((prevState) => ({ isSorted: !prevState.isSorted }));
   }
 
   handleClick = (costumer) => {
     const { exclude } = this.props;
+    // const { sorteredCostumers } = this.state;
 
-    exclude(costumer);
+    // const newSorteredCostumers = sorteredCostumers.filter
+
+    this.setState((prevState) => ({
+      sorteredCostumers: prevState.sorteredCostumers
+        .filter(({ nome, email }) => (
+        nome !== costumer.nome && email !== costumer.email
+      )),
+    }), () => {
+      exclude(costumer);
+    });
   }
 
   render() {
-    const { isLoged } = this.state;
+    const { isLoged, isSorted, sorteredCostumers } = this.state;
     const { costumers } = this.props;
     return(
       <div>
@@ -32,21 +56,34 @@ class Costumers extends React.Component {
             <section>
               <h1>Clientes cadastrados</h1>
               <Link to="/register">Cadastrar clientes</Link>
-              <div>
-                {
-                  costumers.length === 0 ? <h3>Nenhum cliente cadastrado</h3> : (
-                    costumers.map((costumer) => (
-                      <div key={ costumer.email }>
-                        <hr />
-                        <p>{`Nome: ${costumer.nome}`}</p>
-                        <p>{`Idade: ${costumer.idade}`}</p>
-                        <p>{`E-mail: ${costumer.email}`}</p>
-                        <Button buttonText='X' onClick={ (costumer) => this.handleClick(costumer) } />
-                      </div>
-                    ))
-                  )
-                }
-              </div>
+              <Button buttonText='Ordem álfabética' onClick={ this.handleOrder } />
+              {
+                costumers.length === 0 ? <h3>Nenhum cliente cadastrado</h3> : (
+                  <div>
+                    {
+                      isSorted ? (
+                        sorteredCostumers.map((costumer) => (
+                          <div key={ costumer.email }>
+                            <hr />
+                            <p>{`Nome: ${costumer.nome}`}</p>
+                            <p>{`Idade: ${costumer.idade}`}</p>
+                            <p>{`E-mail: ${costumer.email}`}</p>
+                            <Button buttonText='X' onClick={ () => this.handleClick(costumer) } />
+                          </div>
+                        ))) : (
+                          costumers.map((costumer) => (
+                            <div key={ costumer.email }>
+                              <hr />
+                              <p>{`Nome: ${costumer.nome}`}</p>
+                              <p>{`Idade: ${costumer.idade}`}</p>
+                              <p>{`E-mail: ${costumer.email}`}</p>
+                              <Button buttonText='X' onClick={ () => this.handleClick(costumer) } />
+                            </div>
+                        )))
+                    }                    
+                  </div>
+                )
+              }
             </section>
           ) : (
             <h1>Login não efetuado</h1>
@@ -64,7 +101,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  exclude: (state) => dispatch(DELETE, state),
+  exclude: (state) => dispatch(manageCostumers(DELETE, state)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Costumers);
