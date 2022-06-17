@@ -7,7 +7,7 @@ import manageCostumers from '../redux/actions/actionCostumers';
 
 class Costumers extends React.Component {
   state = {
-    isLoged: true,
+    isLoged: false,
     isSorted: false,
     sorteredCostumers: [],
   }
@@ -32,9 +32,6 @@ class Costumers extends React.Component {
 
   handleClick = (costumer) => {
     const { exclude } = this.props;
-    // const { sorteredCostumers } = this.state;
-
-    // const newSorteredCostumers = sorteredCostumers.filter
 
     this.setState((prevState) => ({
       sorteredCostumers: prevState.sorteredCostumers
