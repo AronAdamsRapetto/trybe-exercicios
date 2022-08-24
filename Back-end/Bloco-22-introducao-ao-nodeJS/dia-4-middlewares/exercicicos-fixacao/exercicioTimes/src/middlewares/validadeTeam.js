@@ -7,6 +7,4 @@ const validateTeam = (req, res, next) => {
   }
 };
 
-module.exports = {
-  validateTeam,
-}
+module.exports = validateTeam;
