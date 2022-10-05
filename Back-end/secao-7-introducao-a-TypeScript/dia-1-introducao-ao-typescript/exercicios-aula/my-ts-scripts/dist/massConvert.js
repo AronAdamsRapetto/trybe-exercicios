@@ -14,4 +14,4 @@ function massConvert(value, base, convert) {
     const convertUnit = Math.pow(10, massMap[convert]);
     return (value * baseUnit) / convertUnit;
 }
-console.log(massConvert(1, 'kg', 'mg'));
+console.log(massConvert(1, 'g', 'kg'));
