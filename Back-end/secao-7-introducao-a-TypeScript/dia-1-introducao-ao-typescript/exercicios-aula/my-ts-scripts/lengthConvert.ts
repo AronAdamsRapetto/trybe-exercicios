@@ -8,9 +8,9 @@ enum lengthMap {
   km,    
 };
 
-type unit = 'km' | 'dam' | 'hm' | 'm' | 'dm' | 'cm' | 'mm';
+type lengthUnit = 'km' | 'dam' | 'hm' | 'm' | 'dm' | 'cm' | 'mm';
 
-function convert(value: number, base:unit , convert:unit): number {
+function lengthConvert(value: number, base:lengthUnit , convert:lengthUnit): number {
     const baseUnit:number = Math.pow(10, lengthMap[base]);
     console.log(baseUnit);
     const convertUnit:number = Math.pow(10, lengthMap[convert]);
@@ -18,4 +18,4 @@ function convert(value: number, base:unit , convert:unit): number {
     return (value * baseUnit) / convertUnit;
 }
 
-console.log(convert(1, 'm', 'dam'));
+console.log(lengthConvert(1, 'm', 'dam'));

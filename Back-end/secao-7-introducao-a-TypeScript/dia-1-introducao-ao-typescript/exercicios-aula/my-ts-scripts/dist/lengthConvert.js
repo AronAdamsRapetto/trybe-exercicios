@@ -10,11 +10,11 @@ var lengthMap;
     lengthMap[lengthMap["km"] = 3] = "km";
 })(lengthMap || (lengthMap = {}));
 ;
-function convert(value, base, convert) {
+function lengthConvert(value, base, convert) {
     const baseUnit = Math.pow(10, lengthMap[base]);
     console.log(baseUnit);
     const convertUnit = Math.pow(10, lengthMap[convert]);
     console.log(convertUnit);
     return (value * baseUnit) / convertUnit;
 }
-console.log(convert(1, 'km', 'mm'));
+console.log(lengthConvert(1, 'm', 'dam'));
