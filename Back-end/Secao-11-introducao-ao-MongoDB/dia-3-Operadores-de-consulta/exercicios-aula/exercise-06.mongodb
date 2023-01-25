@@ -1,0 +1,11 @@
+use('cinema');
+
+db.movies.find({
+  $and: [
+    { ratings: { $elemMatch: { $gt: 103 } } },
+    { category: { $elemMatch: { $eq: 'adventure' } } }
+  ]
+},
+{
+  title: 1, ratings: 1, category: 1
+})

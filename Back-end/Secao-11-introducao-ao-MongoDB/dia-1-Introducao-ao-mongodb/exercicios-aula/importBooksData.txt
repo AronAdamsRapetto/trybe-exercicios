@@ -1,0 +1,9 @@
+Dentro do container, rodar o seguinte comando na CLI
+
+mongoimport --port 27017 -d library -c books --jsonArray --file books.json
+
+-d = Nome do database
+-c = Nome da colection
+--jsonArray = Especifica que os dados virão de um Array json
+--file = Nome do arquivo onde se encontra o json
+--port = A porta que o serviço está rodando né...

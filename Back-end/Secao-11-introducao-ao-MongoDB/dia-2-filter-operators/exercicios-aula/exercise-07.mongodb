@@ -1,0 +1,7 @@
+use('class');
+
+db.superheroes.find({ 'aspects.eyeColor': 'green' });
+
+// OU
+
+// db.superheroes.find({ 'aspects.eyeColor': { $eq: 'green' } });
